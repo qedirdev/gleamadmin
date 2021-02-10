@@ -386,3 +386,81 @@
 
 })(jQuery);
 
+
+
+//Socials List
+function query(selector) {
+	return Array.prototype.slice.call(document.querySelectorAll(selector));
+}
+
+query('.social-input').forEach(element => {
+	var inputName = "." + element.name;
+	element.addEventListener("click", () => {
+		var openDiv = document.querySelector(inputName);
+
+		if (element.checked == true) {
+			openDiv.style.display = "block";
+		}
+		else {
+			openDiv.style.display = "none";
+		}
+	});
+});
+//Social List End
+
+
+let peopleCount = document.querySelector('#people_count');
+let prizes = document.querySelector('#prizes');
+
+peopleCount.addEventListener("change", () => {
+	var peopleCount = document.querySelector('#people_count').value;
+
+	//add html
+	//find html
+
+	var prizeHtml = `<div id="prize-${peopleCount}" class="col-lg-4">
+							<div class="card">
+								<div class="card-header d-flex justify-content-between">
+									<h3 class="card-title">${peopleCount}. Ödül</h3>
+									<button id="close" type="button" class="btn btn-pill btn-sm btn-danger"><i
+											class="fa fa-times"></i></button>
+								</div>
+								<div class="card-body">
+									<div class="form-group">
+										<label class="form-label">Ödül başlığı</label>
+										<input type="text" class="form-control" placeholder="Başlık">
+									</div>
+									<div class="form-group">
+										<label class="form-label">Ödül açıklaması</label>
+										<div class="">
+											<textarea class="form-control mb-4" placeholder="Açıklama giriniz.."
+												rows="3" required></textarea>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Ödül fotoğrafı</label>
+										<div class="">
+											<input type="file" class="dropify" data-height="120" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>`;
+
+	prizes.insertAdjacentHTML(
+		'afterbegin',
+		prizeHtml);
+
+	var prizeCardInside = document.querySelector(`#prize-${peopleCount}`);
+
+	var closeBtn = prizeCardInside.querySelector("#close");
+
+	closeBtn.addEventListener('click', () => {
+		prizeCardInside.remove();
+		var peopleCount = document.querySelector('#people_count').value = "";
+	});
+
+
+
+});
+

@@ -34,39 +34,25 @@
     <!---Icons css-->
     <link href="../../assets/css/icons.css" rel="stylesheet" />
 
+    <!-- Simplebar css -->
+    <link rel="stylesheet" href="../../assets/plugins/simplebar/css/simplebar.css">
+
     <!-- INTERNAL Select2 css -->
     <link href="../../assets/plugins/select2/select2.min.css" rel="stylesheet" />
 
     <!-- INTERNAL File Uploads css -->
     <link href="../../assets/plugins/fancyuploder/fancy_fileupload.css" rel="stylesheet" />
 
-    <!-- INTERNAL Time picker css -->
-    <link href="../../assets/plugins/time-picker/jquery.timepicker.css" rel="stylesheet" />
-
-    <!-- INTERNAL Date Picker css -->
-    <link href="../../assets/plugins/date-picker/date-picker.css" rel="stylesheet" />
-
     <!-- INTERNAL File Uploads css-->
     <link href="../../assets/plugins/fileupload/css/fileupload.css" rel="stylesheet" type="text/css" />
 
-    <!-- INTERNAL Mutipleselect css-->
-    <link rel="stylesheet" href="../../assets/plugins/multipleselect/multiple-select.css">
-
-    <!-- INTERNAL Sumoselect css-->
-    <link rel="stylesheet" href="../../assets/plugins/sumoselect/sumoselect.css">
-
-    <!-- INTERNAL telephoneinput css-->
-    <link rel="stylesheet" href="../../assets/plugins/telephoneinput/telephoneinput.css">
-
-    <!-- INTERNAL Jquerytransfer css-->
-    <link rel="stylesheet" href="../../assets/plugins/jQuerytransfer/jquery.transfer.css">
-    <link rel="stylesheet" href="../../assets/plugins/jQuerytransfer/icon_font/icon_font.css">
-
-    <!-- INTERNAL multi css-->
-    <link rel="stylesheet" href="../../assets/plugins/multi/multi.min.css">
-
     <!-- Color Skin css -->
     <link id="theme" href="../../assets/colors/color1.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 
 </head>
 
@@ -112,15 +98,6 @@
                                         <span class="text-center user-semi-title">Web Developer</span>
                                         <div class="dropdown-divider"></div>
                                     </div>
-                                    <a class="dropdown-item d-flex" href="#">
-                                        <svg class="header-icon mr-3" xmlns="http://www.w3.org/2000/svg" height="24"
-                                            viewBox="0 0 24 24" width="24">
-                                            <path d="M0 0h24v24H0V0z" fill="none" />
-                                            <path
-                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z" />
-                                        </svg>
-                                        <div class="">Profil Sayfası</div>
-                                    </a>
                                     <a class="dropdown-item d-flex" href="giris.html">
                                         <svg class="header-icon mr-3" xmlns="http://www.w3.org/2000/svg"
                                             enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
@@ -185,11 +162,14 @@
                                 </li>
                                 <li aria-haspopup="true">
                                     <a href="ayarlar.html" class="sub-icon">
-                                        <svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" height="24"
-                                            viewBox="0 0 24 24" width="24">
-                                            <path d="M0 0h24v24H0V0z" fill="none" />
-                                            <path
-                                                d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z" />
+                                        <svg class="hor-icon" xmlns="http://www.w3.org/2000/svg"
+                                            enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
+                                            width="24">
+                                            <g>
+                                                <path d="M0,0h24v24H0V0z" fill="none" />
+                                                <path
+                                                    d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z" />
+                                            </g>
                                         </svg>
                                         Ayarlar
                                     </a>
@@ -255,7 +235,11 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <!-- End Row Content -->
 
+                        <!-- Row Content -->
+                        <div class="row">
                             <div class="col-md-12 col-lg-12 col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
@@ -272,43 +256,27 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <!-- End Row Content -->
 
+
+                        <!-- Row Content -->
+                        <div class="row">
                             <div class="col-md-12 col-lg-12 col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
                                         <h3 class="card-title">Ürün Fotoğrafı</h3>
                                     </div>
                                     <div class="card-body">
-                                        <div class="dropify-wrapper">
-                                            <div class="dropify-message">
-                                                <span class="file-icon">
-                                                    <p>Bir dosya sürükleyip bırakın veya tıklayın</p>
-                                                </span>
-                                                <p class="dropify-error">Hata, yanlış bir şey eklendi.</p>
-                                            </div>
-                                            <div class="dropify-loader"></div>
-                                            <div class="dropify-errors-container">
-                                                <ul></ul>
-                                            </div>
-                                            <input type="file" class="dropify" data-height="180">
-                                            <button type="button" class="dropify-clear">Temizle</button>
-                                            <div class="dropify-preview">
-                                                <span class="dropify-render"></span>
-                                                <div class="dropify-infos">
-                                                    <div class="dropify-infos-inner">
-                                                        <p class="dropify-filename">
-                                                            <span class="dropify-filename-inner"></span>
-                                                        </p>
-                                                        <p class="dropify-infos-message">Değiştirmek için sürükleyip
-                                                            bırakın veya tıklayın</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <input type="file" class="dropify" data-height="120" />
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <!-- End Row Content -->
 
+                        <!-- Row Content -->
+                        <div class="row">
                             <div class="col-md-4 col-lg-14 col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
@@ -317,7 +285,8 @@
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label class="form-label">Lütfen bir sayı girin</label>
-                                            <input class="form-control" required type="number" name="date" min="1">
+                                            <input class="form-control" required type="text" id="people_count"
+                                                name="people_count" min="1">
                                         </div>
                                     </div>
                                 </div>
@@ -350,25 +319,34 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <!-- End Row Content -->
 
+                        <!-- Row Content -->
+                        <div id="prizes" class="row">
+                        </div>
+                        <!-- End Row Content -->
+
+                        <!-- Row Content -->
+                        <div class="row">
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">
                                         <div class="card-title">Şartlar</div>
                                     </div>
                                     <div class="card-body">
-                                        <ul class="list-group">
+                                        <ul id="socialList" class="list-group">
                                             <li class="list-group-item">
                                                 Facebook
                                                 <div class="material-switch pull-right">
-                                                    <input id="someSwitchOptionSuccess" class="social-input"
-                                                        name="facebook" type="checkbox" />
-                                                    <label for="someSwitchOptionSuccess" class="label-success"></label>
+                                                    <input id="facebook" class="social-input" name="fb"
+                                                        type="checkbox" />
+                                                    <label for="facebook" class="label-success"></label>
                                                 </div>
-                                                <div id="social-url">
+                                                <div class="fb">
                                                     <form action="" class="">
                                                         <input type="text" class="form-control mt-3"
-                                                            placeholder="Facebook sayfasının adresi">
+                                                            placeholder="Facebook">
                                                         <button type="button"
                                                             class="btn btn-info btn-sm mt-2">Kaydet</button>
                                                     </form>
@@ -377,41 +355,132 @@
                                             <li class="list-group-item">
                                                 Twitter
                                                 <div class="material-switch pull-right">
-                                                    <input id="someSwitchOptionSuccess" class="social-input" name="twitter"
+                                                    <input id="twitter" class="social-input" name="tw"
                                                         type="checkbox" />
-                                                    <label for="someSwitchOptionSuccess" class="label-success"></label>
+                                                    <label for="twitter" class="label-success"></label>
                                                 </div>
-                                                <div id="social-url">
-                                                    <form action="">
-                                                        <input type="text" class="form-control mt-3"
-                                                            placeholder="Facebook sayfasının adresi">
+                                                <div class="tw">
+                                                    <form action="" class="">
+                                                        <div class="input-group mt-3">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Twitter">
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-twitter" type="button"><i
+                                                                        class="fab fa-twitter"></i></button>
+                                                            </span>
+                                                        </div>
                                                         <button type="button"
                                                             class="btn btn-info btn-sm mt-2">Kaydet</button>
                                                     </form>
                                                 </div>
                                             </li>
+
                                             <li class="list-group-item">
-                                                Facebook
+                                                İnstagram
                                                 <div class="material-switch pull-right">
-                                                    <input id="someSwitchOptionSuccess" name="someSwitchOption001"
+                                                    <input id="instagram" class="social-input" name="ig"
                                                         type="checkbox" />
-                                                    <label for="someSwitchOptionSuccess" class="label-success"></label>
+                                                    <label for="instagram" class="label-success"></label>
+                                                </div>
+                                                <div class="ig">
+                                                    <form action="" class="">
+                                                        <div class="input-group mt-3">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="İnstagram">
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-instagram" type="button"><i
+                                                                        class="fab fa-instagram"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <button type="button"
+                                                            class="btn btn-info btn-sm mt-2">Kaydet</button>
+                                                    </form>
                                                 </div>
                                             </li>
+
                                             <li class="list-group-item">
-                                                Facebook
+                                                Youtube
                                                 <div class="material-switch pull-right">
-                                                    <input id="someSwitchOptionSuccess" name="someSwitchOption001"
+                                                    <input id="youtube" class="social-input" name="yt"
                                                         type="checkbox" />
-                                                    <label for="someSwitchOptionSuccess" class="label-success"></label>
+                                                    <label for="youtube" class="label-success"></label>
+                                                </div>
+                                                <div class="yt">
+                                                    <form action="" class="">
+                                                        <div class="input-group mt-3">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Youtube">
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-youtube" type="button"><i
+                                                                        class="fab fa-youtube"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <button type="button"
+                                                            class="btn btn-info btn-sm mt-2">Kaydet</button>
+                                                    </form>
                                                 </div>
                                             </li>
+
                                             <li class="list-group-item">
-                                                Facebook
+                                                Discord
                                                 <div class="material-switch pull-right">
-                                                    <input id="someSwitchOptionSuccess" name="someSwitchOption001"
+                                                    <input id="discord" class="social-input" name="dc"
                                                         type="checkbox" />
-                                                    <label for="someSwitchOptionSuccess" class="label-success"></label>
+                                                    <label for="discord" class="label-success"></label>
+                                                </div>
+                                                <div class="dc">
+                                                    <form action="" class="">
+                                                        <div class="input-group mt-3">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Discord">
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-flickr" type="button"><i
+                                                                        class="fab fa-discord"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <button type="button"
+                                                            class="btn btn-info btn-sm mt-2">Kaydet</button>
+                                                    </form>
+                                                </div>
+                                            </li>
+
+                                            <li class="list-group-item">
+                                                Twitch
+                                                <div class="material-switch pull-right">
+                                                    <input id="twitch" class="social-input" name="twt"
+                                                        type="checkbox" />
+                                                    <label for="twitch" class="label-success"></label>
+                                                </div>
+                                                <div class="twt">
+                                                    <form action="" class="">
+                                                        <div class="input-group mt-3">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Twitch">
+                                                            <span class="input-group-append">
+                                                                <button class="btn btn-primary" type="button"><i
+                                                                        class="fab fa-twitch"></i></button>
+                                                            </span>
+                                                        </div>
+                                                        <button type="button"
+                                                            class="btn btn-info btn-sm mt-2">Kaydet</button>
+                                                    </form>
+                                                </div>
+                                            </li>
+
+                                            <li class="list-group-item">
+                                                Dlive
+                                                <div class="material-switch pull-right">
+                                                    <input id="dlive" class="social-input" name="dlv" type="checkbox" />
+                                                    <label for="dlive" class="label-success"></label>
+                                                </div>
+                                                <div class="dlv">
+                                                    <form action="" class="">
+                                                        <div class="input-group mt-3">
+                                                            <input type="text" class="form-control" placeholder="Dlive">
+                                                        </div>
+                                                        <button type="button"
+                                                            class="btn btn-info btn-sm mt-2">Kaydet</button>
+                                                    </form>
                                                 </div>
                                             </li>
                                         </ul>
@@ -476,6 +545,21 @@
     <script src="../../assets/plugins/peitychart/jquery.peity.min.js"></script>
     <script src="../../assets/plugins/peitychart/peitychart.init.js"></script>
 
+    <!-- INTERNAL File uploads js -->
+    <script src="../../assets/plugins/fileupload/js/dropify.js"></script>
+    <script src="../../assets/js/filupload.js"></script>
+
+    <!-- INTERNAL File-Uploads Js-->
+    <script src="../../assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+    <script src="../../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+    <script src="../../assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+    <script src="../../assets/plugins/fancyuploder/fancy-uploader.js"></script>
+
+    <!--INTERNAL Form Advanced Element -->
+    <script src="../../assets/js/formelementadvnced.js"></script>
+    <script src="../../assets/js/form-elements.js"></script>
+    <script src="../../assets/js/file-upload.js"></script>
+
     <!--INTERNAL Apexchart js-->
     <script src="../../assets/js/apexcharts.js"></script>
 
@@ -485,9 +569,6 @@
     <!--INTERNAL Chart js -->
     <script src="../../assets/plugins/chart/chart.bundle.js"></script>
     <script src="../../assets/plugins/chart/utils.js"></script>
-
-    <!-- INTERNAL File-Uploads Js-->
-    <script src="../../assets/plugins/fancyuploder/jquery.fileupload.js"></script>
 
     <!-- INTERNAL Select2 js -->
     <script src="../../assets/plugins/select2/select2.full.min.js"></script>
@@ -499,31 +580,11 @@
     <!--INTERNAL Index js-->
     <script src="../../assets/js/index1.js"></script>
 
-    <!--INTERNAL Form Advanced Element -->
-    <script src="../../assets/js/file-upload.js"></script>
-
     <!-- Simplebar JS -->
     <script src="../../assets/plugins/simplebar/js/simplebar.min.js"></script>
 
     <!-- Custom js-->
     <script src="../../assets/js/custom.js"></script>
-
-    <script>
-        
-        var checkBox = document.querySelector("#someSwitchOptionSuccess");
-        var sociaLurl = document.querySelector("#social-url");
-
-        checkBox.addEventListener('click', openForm)
-
-        function openForm() {
-            // If the checkbox is checked, display the output text
-            if (checkBox.checked == true) {
-                sociaLurl.style.display = "block";
-            } else {
-                sociaLurl.style.display = "none";
-            }
-        };
-    </script>
 
 </body>
 
