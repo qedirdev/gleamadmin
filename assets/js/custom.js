@@ -388,6 +388,8 @@
 
 
 
+
+
 //Socials List
 function query(selector) {
 	return Array.prototype.slice.call(document.querySelectorAll(selector));
@@ -409,20 +411,27 @@ query('.social-input').forEach(element => {
 //Social List End
 
 
-let peopleCount = document.querySelector('#people_count');
+
+
+
 let prizes = document.querySelector('#prizes');
 
-peopleCount.addEventListener("change", () => {
-	var peopleCount = document.querySelector('#people_count').value;
+let peopleCountChange = document.querySelector("#people_count");
+peopleCountChange.addEventListener("change", () => {
+	var peopleCountValue = document.querySelector('#people_count').value;
 
-	//add html
+	
+for (let index = 1; index <= peopleCountValue; index++) {
+	let peopleCount = index;
+
+//add html
 	//find html
 
 	var prizeHtml = `<div id="prize-${peopleCount}" class="col-lg-4">
 							<div class="card">
 								<div class="card-header d-flex justify-content-between">
 									<h3 class="card-title">${peopleCount}. Ödül</h3>
-									<button id="close" type="button" class="btn btn-pill btn-sm btn-danger"><i
+									<button id="close-${peopleCount}" type="button" class="btn btn-pill btn-sm btn-danger"><i
 											class="fa fa-times"></i></button>
 								</div>
 								<div class="card-body">
@@ -453,12 +462,17 @@ peopleCount.addEventListener("change", () => {
 
 	var prizeCardInside = document.querySelector(`#prize-${peopleCount}`);
 
-	var closeBtn = prizeCardInside.querySelector("#close");
+	var closeBtn = prizeCardInside.querySelector(`#close-${peopleCount}`);
 
 	closeBtn.addEventListener('click', () => {
-		prizeCardInside.remove();
-		var peopleCount = document.querySelector('#people_count').value = "";
+		var prizeCardInsideT = document.querySelector(`#prize-${peopleCount}`);
+		prizeCardInsideT.remove();
+		document.querySelector('#people_count').value = "";
 	});
+	
+}
+
+	
 
 
 

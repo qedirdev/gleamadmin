@@ -54,7 +54,7 @@ $(function(e) {
 	$('#example-1').DataTable( {
 		responsive: true,
 		language: {
-			searchPlaceholder: 'Search...',
+			searchPlaceholder: 'Arama...',
 			sSearch: '',
 			lengthMenu: '_MENU_',
 		},
@@ -63,7 +63,30 @@ $(function(e) {
 				display: $.fn.dataTable.Responsive.display.modal( {
 					header: function ( row ) {
 						var data = row.data();
-						return 'Details for '+data[0]+' '+data[1];
+						return 'Ayrıntılar '+data[0]+' '+data[1];
+					}
+				} ),
+				renderer: $.fn.dataTable.Responsive.renderer.tableAll( {
+					tableClass: 'table border mb-0'
+				} )
+			}
+		}
+	} );
+
+
+	$('#example-2').DataTable( {
+		responsive: true,
+		language: {
+			searchPlaceholder: 'Arama...',
+			sSearch: '',
+			lengthMenu: '_MENU_',
+		},
+		responsive: {
+			details: {
+				display: $.fn.dataTable.Responsive.display.modal( {
+					header: function ( row ) {
+						var data = row.data();
+						return 'Ayrıntılar '+data[0]+' '+data[1];
 					}
 				} ),
 				renderer: $.fn.dataTable.Responsive.renderer.tableAll( {

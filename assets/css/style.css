@@ -25366,3 +25366,14 @@ object, embed, video {
 .tw, .fb, .ig, .yt, .dc, .twt, .dlv{
   display: none;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

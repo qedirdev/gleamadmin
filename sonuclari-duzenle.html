@@ -12,7 +12,7 @@
 		content="admin panel ui, user dashboard template, web application templates, premium admin templates, html css admin templates, premium admin templates, best admin template bootstrap 4, dark admin template, bootstrap 4 template admin, responsive admin template, bootstrap panel template, bootstrap simple dashboard, html web app template, bootstrap report template, modern admin template, nice admin template" />
 
 	<!-- Title -->
-	<title>Tüm Ürünler</title>
+	<title>Sonuçları Düzenle</title>
 
 	<!--Favicon -->
 	<link rel="icon" href="../../assets/images/brand/favicon.ico" type="image/x-icon" />
@@ -33,11 +33,6 @@
 
 	<!---Icons css-->
 	<link href="../../assets/css/icons.css" rel="stylesheet" />
-
-	<!-- Data table css -->
-	<link href="../../assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
-	<link href="../../assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
-	<link href="../../assets/plugins/datatable/responsive.bootstrap4.min.css" rel="stylesheet" />
 
 	<!-- Simplebar css -->
 	<link rel="stylesheet" href="../../assets/plugins/simplebar/css/simplebar.css">
@@ -207,86 +202,132 @@
 					<!--Page header-->
 					<div class="page-header">
 						<div class="page-leftheader">
-							<h4 class="page-title mb-0">Tüm Ürünler</h4>
+							<h4 class="page-title mb-0">Sonuçları düzenle</h4>
 							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="index.html"><i
-											class="fe fe-home mr-2 fs-14"></i>Ana Sayfa</a></li>
-								<li class="breadcrumb-item active" aria-current="page"><a href="#">Tüm Ürünler</a></li>
+								<li class="breadcrumb-item"><a href="index.html"><i class="fe fe-home mr-2 fs-14"></i>Ana
+										Sayfa</a>
+								</li>
+                                <li class="breadcrumb-item"><a href="sonuclar.html">Sonuçlar</a></li>
+                                <li class="breadcrumb-item active"><a href="#">Sonuçları düzenle</a></li>
 							</ol>
 						</div>
 					</div>
-					<!--End Page header-->
+                    <!--End Page header-->
+                    
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-title">
+                                            Ödülleri düzenle
+                                        </div>
+                                        <div class="btn-list">
+                                            <button type="submit" class="btn btn-outline-success btn-pill">Kaydet</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            Ödül Sayıları
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="prizeNumber" class="form-label">Ödül sayı</label>
+                                            <input required value="1.Ödül" type="text" class="form-control" id="prizeNumber" placeholder="1.Ödül">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            Ödül Başlığı
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="prizeTitle" class="form-label">Ödül başlığı</label>
+                                            <input required value="İyi şanslar" type="text" class="form-control" id="prizeTitle" placeholder="İyi şanslar">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            Ödül Açıklaması
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="prizeDesc" class="form-label">Ödül Açıklaması</label>
+                                            <input required value="Şanşı olan kazanır!" type="text" class="form-control" id="prizeDesc" placeholder="Şanşı olan kazanır!">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
 
-					<div class="row">
-						<div class="col-12">
-							<div class="card">
-								<div class="card-header">
-									<div class="card-title">Tüm Ürenlerin Listesi</div>
-								</div>
-								<div class="card-body">
-									<div class="table-responsive">
-										<table class="table table-bordered text-nowrap" id="example-2">
-											<thead>
-												<tr>
-													<th class="wd-15p border-bottom-0">ID</th>
-													<th class="wd-15p border-bottom-0">Katılan kişi sayısı</th>
-													<th class="wd-15p border-bottom-0">Katılım sayısı</th>
-													<th class="wd-15p border-bottom-0">Başlık</th>
-													<th class="wd-15p border-bottom-0">Başlangıç tarihi</th>
-													<th class="wd-20p border-bottom-0">Bitiş tarihi</th>
-													<th class="wd-20p border-bottom-0">Haraketler</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>1</td>
-													<td><span class="badge badge-success-light">150</span></td>
-													<td><span class="badge badge-warning-light">281</span></td>
-													<td>İyi şanslar!</td>
-													<td>09/02/2021</td>
-													<td>09/02/2021</td>
-													<td class="d-flex justify-content-around">
-														<a href="#" class="btn btn-outline-warning btn-pill btn-warning btn-sm">Link</a>
-														<a href="sonuclar.html" class="btn btn-outline-success btn-pill btn-success btn-sm">Sonuç</a>
-														<a href="urunleri-duzenleme.html" class="btn btn-outline-info btn-pill btn-info btn-sm">Düzenle</a>
-														<a href="#" class="btn btn-outline-danger btn-pill btn-danger btn-sm">Sil</a>
-													</td>
-												</tr>
-												<tr>
-													<td>2</td>
-													<td><span class="badge badge-success-light">250</span></td>
-													<td><span class="badge badge-warning-light">251</span></td>
-													<td>İyi şanslar!</td>
-													<td>09/02/2021</td>
-													<td>09/02/2021</td>
-													<td class="d-flex justify-content-around">
-														<a href="#" class="btn btn-outline-warning btn-pill btn-warning btn-sm">Link</a>
-														<a href="sonuclar.html" class="btn btn-outline-success btn-pill btn-success btn-sm">Sonuç</a>
-														<a href="urunleri-duzenleme.html" class="btn btn-outline-info btn-pill btn-info btn-sm">Düzenle</a>
-														<a href="#" class="btn btn-outline-danger btn-pill btn-danger btn-sm">Sil</a>
-													</td>
-												</tr>
-												<tr>
-													<td>3</td>
-													<td><span class="badge badge-success-light">350</span></td>
-													<td><span class="badge badge-warning-light">221</span></td>
-													<td>İyi şanslar!</td>
-													<td>09/02/2021</td>
-													<td>09/02/2021</td>
-													<td class="d-flex justify-content-around">
-														<a href="#" class="btn btn-outline-warning btn-pill btn-warning btn-sm">Link</a>
-														<a href="sonuclar.html" class="btn btn-outline-success btn-pill btn-success btn-sm">Sonuç</a>
-														<a href="urunleri-duzenleme.html" class="btn btn-outline-info btn-pill btn-info btn-sm">Düzenle</a>
-														<a href="#" class="btn btn-outline-danger btn-pill btn-danger btn-sm">Sil</a>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-title">
+                                            Katılanları düzenle
+                                        </div>
+                                        <div class="btn-list">
+                                            <button type="submit" class="btn btn-outline-success btn-pill">Kaydet</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            Katılan kişiler
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="attendees" class="form-label">Katılımcı ismi</label>
+                                            <input required value="akorecebov" type="text" class="form-control" id="attendees" placeholder="Katılımcı ismi">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">
+                                            Katılım Tarihi
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="prizeDate" class="form-label">Geçerli tarih</label>
+                                            <input required value="" type="datetime-local" class="form-control" id="prizeDate">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
 				</div>
 			</div>
 			<!-- End hor-content-->
@@ -308,8 +349,6 @@
 
 	</div>
 	<!-- End Page -->
-
-
 
 	<!-- Back to top -->
 	<a href="#top" id="back-to-top"><i class="fe fe-chevrons-up"></i></a>
@@ -340,24 +379,32 @@
 	<script src="../../assets/plugins/p-scrollbar/p-scrollbar.js"></script>
 	<script src="../../assets/plugins/p-scrollbar/p-scroll.js"></script>
 
+	<!--INTERNAL Peitychart js-->
+	<script src="../../assets/plugins/peitychart/jquery.peity.min.js"></script>
+	<script src="../../assets/plugins/peitychart/peitychart.init.js"></script>
 
-	<!-- INTERNAL Data tables -->
-	<script src="../../assets/plugins/datatable/js/jquery.dataTables.js"></script>
-	<script src="../../assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
-	<script src="../../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-	<script src="../../assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
-	<script src="../../assets/plugins/datatable/js/jszip.min.js"></script>
-	<script src="../../assets/plugins/datatable/js/pdfmake.min.js"></script>
-	<script src="../../assets/plugins/datatable/js/vfs_fonts.js"></script>
-	<script src="../../assets/plugins/datatable/js/buttons.html5.min.js"></script>
-	<script src="../../assets/plugins/datatable/js/buttons.print.min.js"></script>
-	<script src="../../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-	<script src="../../assets/plugins/datatable/dataTables.responsive.min.js"></script>
-	<script src="../../assets/plugins/datatable/responsive.bootstrap4.min.js"></script>
-	<script src="../../assets/js/datatables.js"></script>
+	<!--INTERNAL Apexchart js-->
+	<script src="../../assets/js/apexcharts.js"></script>
+
+	<!--INTERNAL ECharts js-->
+	<script src="../../assets/plugins/echarts/echarts.js"></script>
+
+	<!--INTERNAL Chart js -->
+	<script src="../../assets/plugins/chart/chart.bundle.js"></script>
+	<script src="../../assets/plugins/chart/utils.js"></script>
 
 	<!-- INTERNAL Select2 js -->
 	<script src="../../assets/plugins/select2/select2.full.min.js"></script>
+	<script src="../../assets/js/select2.js"></script>
+
+	<!--INTERNAL Moment js-->
+	<script src="../../assets/plugins/moment/moment.js"></script>
+
+	<!--INTERNAL Index js-->
+	<script src="../../assets/js/index1.js"></script>
+
+	<!-- Simplebar JS -->
+	<script src="../../assets/plugins/simplebar/js/simplebar.min.js"></script>
 
 	<!-- Custom js-->
 	<script src="../../assets/js/custom.js"></script>
