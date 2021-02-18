@@ -41,7 +41,12 @@
 	<link href="../../assets/plugins/select2/select2.min.css" rel="stylesheet" />
 
 	<!-- Color Skin css -->
-	<link id="theme" href="../../assets/colors/color1.css" rel="stylesheet" type="text/css" />
+    <link id="theme" href="../../assets/colors/color1.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
 
 </head>
 
@@ -169,8 +174,14 @@
 											<path
 												d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z" />
 										</svg>
-										Tüm Ürünleri Gör
-									</a>
+										Tüm Ürünleri Gör <i class="fas fa-angle-down horizontal-icon"></i>
+                                    </a>
+                                    
+                                    <ul class="sub-menu">
+                                        <li aria-haspopup="true"><a href="sonuclar.html"> Sonuçlar</a></li>
+                                        <li aria-haspopup="true"><a href="sonuclandirmalar.html"> Sonuçlandırmalar</a></li>
+                                        <li aria-haspopup="true"><a href="kazananlar.html">Kazananlar</a></li>
+                                    </ul>
 								</li>
 								<li aria-haspopup="true">
 									<a href="ayarlar.html" class="sub-icon">
@@ -233,11 +244,205 @@
                                     </div>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-text">
-                                                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24" width="18"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.25 12.15L11 13V7h1.5v5.25l4.5 2.67-.75 1.23z" opacity=".3"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                                            <div class="input-group-text btn-facebook">
+                                                <i class="fab fa-facebook"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="Agshin Rajabov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-instagram">
+                                                <i class="fab fa-instagram"></i>
                                             </div><!-- input-group-text -->
                                         </div><!-- input-group-prepend -->
                                         <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-youtube">
+                                                <i class="fab fa-youtube"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-flickr">
+                                                <i class="fab fa-discord"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-primary">
+                                                <i class="fab fa-twitch"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        2.Ödül
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Kazanan kişi
+                                    </div>
+                                    <span class="badge badge-success-light">akorecebov</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Hesaplar
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-facebook">
+                                                <i class="fab fa-facebook"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="Agshin Rajabov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-youtube">
+                                                <i class="fab fa-youtube"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-flickr">
+                                                <i class="fab fa-discord"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-primary">
+                                                <i class="fab fa-twitch"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="tpBasic" value="@akorecebov" disabled type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-title">
+                                        3.Ödül
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Kazanan kişi
+                                    </div>
+                                    <span class="badge badge-success-light">akorecebov</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Hesaplar
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-facebook">
+                                                <i class="fab fa-facebook"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="fbook" value="Agshin Rajabov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="itagram" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="twitter" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-youtube">
+                                                <i class="fab fa-youtube"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="ytube" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-flickr">
+                                                <i class="fab fa-discord"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="flickr" value="@akorecebov" disabled type="text">
+                                    </div>
+
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text btn-primary">
+                                                <i class="fab fa-twitch"></i>
+                                            </div><!-- input-group-text -->
+                                        </div><!-- input-group-prepend -->
+                                        <input class="form-control" id="twitch" value="@akorecebov" disabled type="text">
                                     </div>
                                 </div>
                             </div>
